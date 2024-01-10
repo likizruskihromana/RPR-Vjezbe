@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.DrzavaController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="75.0" text="Naziv:" />
+            <TextField fx:id="fieldNaziv" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="300.0" spacing="10.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="76.0" text="Glavni grad:" />
+            <ChoiceBox fx:id="choiceGrad" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="300.0" spacing="15.0">
+         <children>
+            <Button fx:id="btnOk" onAction="#onOkClick" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Ok" />
+            <Button fx:id="btnCancel" onAction="#onCancelClick" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
